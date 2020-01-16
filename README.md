@@ -60,8 +60,6 @@ demo
 
 This will do object detection on the video or webcam(0 is the webcam ID. Change it if you have multiple webcam connected) and show the result in real time and save the detected video with bounding boxes flying around(without audio).
 
-Note: Requires opencv. You might encounter a problem saying some function of opencv is not implemented.
-Try searching for a solution and reinstall your opencv package if needed(That is what I did).
 Add `--no-show` flag if you don't wanna see the result playing in real time or can't get opencv to work.
 
 Note: Detection running on CPU is not fast enough to show the result in real time and you probably won't be able to see the video playing in normal speed.
