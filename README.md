@@ -2,7 +2,6 @@
 Pytorch implementation of real time object detection algorithm YOLOv3
 
 Guided by [YOLOv3 Pytorch implementation tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
-but has a better style and structure in my opinion
 
 To run this detection algorithm, after cloning the repo, download pretrained weights by the authors to the repo directory
 [here](https://pjreddie.com/media/files/yolov3.weights) or by
@@ -52,8 +51,6 @@ Result will be save in \<outdir\>
 
 demo
 
-![demo](demo/det_dog.jpg)
-
 ![demo](demo/det_kite.jpg)
 
 #### Detecting on a video or a webcam
@@ -71,7 +68,7 @@ Note: Detection running on CPU is not fast enough to show the result in real tim
 But the saved video will be in normal speed for detecting on a video because it processes all the frames. For webcam however, the speed will be much faster because it loses frames.
 
 
-## Reference
+## References
 - Paper [YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 - Paper [Website](https://pjreddie.com/darknet/yolo/)
 - [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)

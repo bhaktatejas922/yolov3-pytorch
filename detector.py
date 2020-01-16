@@ -13,6 +13,8 @@ import os
 import sys
 from datetime import datetime
 
+text_size_adapt=1
+
 def load_classes(namesfile):
     fp = open(namesfile, "r")
     names = fp.read().split("\n")[:-1]
@@ -45,17 +47,17 @@ def draw_bbox(imgs, bbox, colors, classes):
     p1 = tuple(bbox[1:3].int())
     p2 = tuple(bbox[3:5].int())
     color = random.choice(colors)
-    cv2.rectangle(img, p1, p2, color, 2)
-    text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 1, 1)[0]
+    cv2.rectangle(img, p1, p2, color, text_size_adapt)
+    text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, text_size_adapt, 3)[0]
     p3 = (p1[0], p1[1] - text_size[1] - 4)
     p4 = (p1[0] + text_size[0] + 4, p1[1])
     cv2.rectangle(img, p3, p4, color, -1)
-    cv2.putText(img, label, p1, cv2.FONT_HERSHEY_SIMPLEX, 1, [225, 255, 255], 1)
+    cv2.putText(img, label, p1, cv2.FONT_HERSHEY_SIMPLEX, text_size_adapt, [225, 255, 255], 6)
 
 def detect_video(model, args):
 
     input_size = [int(model.net_info['height']), int(model.net_info['width'])]
-
+    text_size_adapt = int(input_size[1]/1000)+1
     colors = pkl.load(open("pallete", "rb"))
     classes = load_classes("data/coco.names")
     colors = [colors[1]]
