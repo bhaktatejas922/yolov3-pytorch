@@ -3,7 +3,7 @@ YOLOv3 Realtime Implentation in PyTorch
 
 Inspired and guided by [YOLOv3 Pytorch implementation tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
 
-# Clone the Repo and download pretrained weights
+## Setup
 After cloning the repo, download the pretrained weights
 [here](https://pjreddie.com/media/files/yolov3.weights) or by
 
