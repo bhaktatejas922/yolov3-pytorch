@@ -3,7 +3,7 @@ Pytorch implementation of real time object detection algorithm YOLOv3
 
 Guided by [YOLOv3 Pytorch implementation tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
 
-To run this detection algorithm, after cloning the repo, download pretrained weights by the authors to the repo directory
+To run this detection algorithm, after cloning the repo, download the pretrained weights
 [here](https://pjreddie.com/media/files/yolov3.weights) or by
 
 ```
@@ -11,9 +11,8 @@ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
 ## Requirements
-
-- Pytorch 0.4
-- OpenCV 3.4
+- Pytorch
+- OpenCV
 
 ## Usage
 
