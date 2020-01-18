@@ -52,6 +52,7 @@ Result will save in \<outdir\>
 demo
 
 ![demo](demo/det_kite.jpg)
+![demo1](demo/det_cat.jpg)
 
 #### Detecting on a video or a webcam
 
